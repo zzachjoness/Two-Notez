@@ -1,0 +1,167 @@
+* {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #ffadad;
+}
+.app {
+  background-color: #fffffc;
+  border-radius: 2rem;
+  margin: 100px;
+  display: flex;
+  flex-direction: row;
+}
+.dock {
+  width: 20rem;
+  text-align: center;
+  border-right: solid 0.25rem #ffadad;
+}
+.dock-title {
+  font-size: 2.5rem;
+  margin: 4rem 2rem 4rem 2rem;
+  user-select: none;
+}
+.dock-addnote {
+  margin: 2rem;
+  font-size: 4rem;
+  font-weight: 400;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 99rem;
+  border: none;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+.dock-addnote:focus {
+  color: lightpink;
+  -webkit-animation: rotate-center 1s linear 1;
+  animation: rotate-center 1s linear 1;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.dock-notes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dock-notes button {
+  list-style: none;
+  margin: 2rem;
+  font-weight: 400;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 99rem;
+  border: none;
+  cursor: pointer;
+}
+.orange {
+  background-color: #ffd6a5;
+}
+.yellow {
+  background-color: #fdffb6;
+}
+.green {
+  background-color: #caffbf;
+}
+.blue {
+  background-color: #9bf6ff;
+}
+.purple {
+  background-color: #bdb2ff;
+}
+.screen {
+  flex-grow: 1;
+}
+.screen-title {
+  font-size: 6rem;
+  letter-spacing: 0.05rem;
+  margin: 13.5rem 6rem 5rem 6rem;
+  user-select: none;
+}
+
+.screen-notes {
+  margin: 0.5rem 4.5rem;
+  font-size: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.note {
+  width: 22.5rem;
+  height: 22.5rem;
+  border-radius: 2rem;
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+}
+.note textarea {
+  align-self: center;
+  margin-top: 2rem;
+  color: black;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  font-weight: 560;
+  width: 18rem;
+  height: 14rem;
+  border: none;
+  resize: none;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+.note textarea::-webkit-scrollbar {
+  display: none;
+}
+.note textarea:focus {
+}
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 1.5rem 1.5rem 2rem;
+}
+.note h1 {
+  font-size: 1.2rem;
+  color: grey;
+}
+.note button {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 99rem;
+  border: none;
+  background-color: black;
+  cursor: pointer;
+}
+.note svg {
+  padding-top: 0.3rem;
+  padding-left: 0.2rem;
+}
+#fake-note {
+  display: none;
+}

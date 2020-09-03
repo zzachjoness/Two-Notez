@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>TwoNOTEZ</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="dock">
+        <h1 class="dock-title">TwoNotez</h1>
+        <button class="dock-addnote">+</button>
+        <div class="dock-notes">
+          <button class="orange"></button>
+          <button class="yellow"></button>
+          <button class="green"></button>
+          <button class="blue"></button>
+          <button class="purple"></button>
+        </div>
+      </div>
+      <div class="screen">
+        <h1 class="screen-title">Notes</h1>
+        <div class="screen-notes">
+          <div class="note" id="fake-note" placeholder="Your memory isn't what it used to be" value=""></textarea>
+            <div class="note-footer"><h1>Fake-Note</h1>
+              <button class="note-edit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
